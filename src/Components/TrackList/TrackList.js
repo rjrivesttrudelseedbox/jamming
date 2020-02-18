@@ -1,15 +1,20 @@
 import React from 'react';
-import { render } from 'react-dom';
+import Track from "../Track/Track";
+import "./TrackList.css"
 
 //<!-- You will add a map method that renders a set of Track components  -->
 
 class TrackList extends React.Component {
-    render() {
+    render = () => {
         return (
             <div className="TrackList">
-                
+                {
+                this.props.searchResults.map((business) =>{
+                    return <Track key={business.id} business={business} />
+                })
+                }
             </div>
-        )
+        );
     }
 }
 
