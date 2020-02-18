@@ -9,11 +9,13 @@ import Playlist from '../Playlist/Playlist';
       constructor(props) {
         super(props)
         this.state = ({
-          searchResults:[{id:0,name:"name",artist:"John",album:"Pogo"},{id:1,name:"name",artist:"John",album:"Pogo"}]
+          searchResults:[{id:1,name:"nooll",artist:"John",album:"Pogo"},{id:2,name:"george",artist:"bobob",album:"Pogo"}]
         })
       }
     
       render() {
+
+        
         return(
           <div>
             <h1>Ja<span className="highlight">mmm</span>ing</h1>

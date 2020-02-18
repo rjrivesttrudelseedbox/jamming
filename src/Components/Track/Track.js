@@ -21,8 +21,8 @@ class Track extends React.Component {
         return (
         <div className="Track">
             <div className="Track-information">
-        <h3>{this.props.name}</h3>
-                <p>bobobobo</p>
+        <h3>{this.props.searchResults.name}</h3>
+        <p>{this.props.searchResults.album}</p>
             </div>
     <button className="Track-action"></button>
         </div>
